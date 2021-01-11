@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
 import { MaterialModule } from "./shared/modules/material.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   imports: [
@@ -13,8 +12,7 @@ import { MatIconModule } from "@angular/material/icon";
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    MatIconModule
+    MaterialModule
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
