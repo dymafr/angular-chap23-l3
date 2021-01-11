@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { FormBuilder, FormGroup } from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 @Component({
   selector: "my-app",
@@ -17,7 +17,7 @@ export class AppComponent {
 
   createForm() {
     this.form = this.fb.group({
-      input: [],
+      input: ["", Validators.required],
       majeur: [],
       gender: [],
       toggle: []
