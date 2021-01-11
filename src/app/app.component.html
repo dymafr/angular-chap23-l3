@@ -1,0 +1,20 @@
+<form [formGroup]="form" class="container">
+	<div>
+		<mat-form-field>
+			<input matInput type="text"  formControlName="input">
+    </mat-form-field>
+	</div>
+	<div>
+		<mat-checkbox formControlName="majeur">Majeur</mat-checkbox>
+	</div>
+	<div>
+		<mat-radio-group formControlName="gender">
+			<mat-radio-button value="femme">Femme</mat-radio-button>
+			<mat-radio-button value="homme">Homme</mat-radio-button>
+		</mat-radio-group>
+	</div>
+	<div>
+		<mat-slide-toggle formControlName="toggle">Majeur</mat-slide-toggle>
+	</div>
+	<pre>{{form.value | json}}</pre>
+</form>
