@@ -1,8 +1,10 @@
 <form [formGroup]="form" class="container">
 	<div>
-		<mat-form-field>
+		<mat-form-field floatLabel="always">
+			<mat-label>Name</mat-label>
 			<input matInput type="text"  formControlName="input">
-    </mat-form-field>
+			<mat-hint align="end">{{form.get('input').value?.length}}/10</mat-hint>
+		</mat-form-field>
 	</div>
 	<div>
 		<mat-checkbox formControlName="majeur">Majeur</mat-checkbox>
